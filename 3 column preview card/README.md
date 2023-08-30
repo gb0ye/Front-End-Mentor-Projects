@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/gb0ye/Front-End-Mentor-Projects/tree/a503e488b07335d8321e0c4d5177ce8f67f8bad9/3%20column%20preview%20card)
+- Live Site URL: [Live Site](https://gb0ye.github.io/Front-End-Mentor-Projects/3%20column%20preview%20card/)
 
 ## My process
 

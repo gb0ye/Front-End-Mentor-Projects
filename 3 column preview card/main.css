@@ -1,0 +1,161 @@
+:root {
+    --background-headings-button-color:  hsl(0, 0%, 95%);
+    --card1-background: hsl(31, 77%, 52%);
+    --card2-background: hsl(184, 100%, 22%);
+    --card3-background: hsl(179, 100%, 13%);
+    --paragraph: hsla(0, 0%, 100%, 0.75);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards {
+    margin: 30px 0;
+    width: 260px;
+}
+
+.card-item {
+    padding: 50px 40px;
+    color: var(--paragraph);
+}
+
+.card-item h2 {
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 50px;
+    color: var(--background-headings-button-color);
+}
+
+.card-item  p {
+    font-size: 0.8rem;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+.card-item button {
+    padding: 11px 20px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+}
+
+.card-item button:hover {
+    border: 2px solid var(--background-headings-button-color);
+    background: none;
+    color: var(--background-headings-button-color);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.card1 {
+    background-color: var(--card1-background);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.card1 h2::before {
+    content: "";
+    position: absolute;
+    background-image: url(./images/icon-sedans.svg);
+    background-size: cover;
+    height: 30px;
+    width: 44px;
+    top: -60px;
+}
+
+.card1 button {
+    color: var(--card1-background);
+}
+
+.card2 {
+    background-color: var(--card2-background);
+}
+
+.card2 h2::before {
+    content: "";
+    position: absolute;
+    background-image: url(./images/icon-suvs.svg);
+    background-size: cover;
+    height: 30px;
+    width: 44px;
+    top: -60px;
+}
+
+.card2 button {
+    color: var(--card2-background);
+}
+
+.card3 {
+    background-color: var(--card3-background);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.card3 h2:before {
+    content: "";
+    position: absolute;
+    background-image: url(./images/icon-luxury.svg);
+    background-size: cover;
+    height: 30px;
+    width: 44px;
+    top: -60px;
+}
+
+.card3 button {
+    color: var(--card3-background);
+}
+
+@media(min-width:768px){
+    body {
+        height: 100vh;
+        align-items:  center;
+    }
+
+    .cards {
+        width: 80%;
+    }
+
+    .card-items {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .card1 {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 0px;
+    }
+
+    .card3 {
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+
+    }
+
+    .card-item p {
+        margin-bottom: 60px;
+        height: 100px;
+        max-height: 100px;
+    }
+    
+    .footer {
+       text-align: center;
+        font-size: 0.8rem;
+    }
+}
+
+.attribution {
+    text-align: center;
+    font-size: 0.687rem;
+}
